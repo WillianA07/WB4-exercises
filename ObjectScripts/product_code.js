@@ -1,12 +1,12 @@
 
 "use strict";
 
-function parsePartCode(productCode) {
+function parsePartCode() {
     let colon = product.indexOf(":");
     let dash = product.indexOf("-");
 
     let supplierCode = product.slice(0, colon);
-    let productNumber = product.slice(colon +1 , dash);
+    let productNumber = product.slice(colon + 1 , dash);
     let productSize = product.slice(dash + 1);
 
     let part = {
