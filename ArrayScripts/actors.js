@@ -72,9 +72,10 @@ function filmThatStartWithA(academyMembers) {
         let filmLength = films.length;
 
         for (let f = 0; f < filmLength; f++) {
-            let startsWithA = films[f].slice(0,1) == "A";
+            let startsWithA = films[f].slice(0 , 1) == "A";
             if (startsWithA) {
                 console.log(academyMembers[i].name);
+                break;
             }
         }
     }
